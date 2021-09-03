@@ -13,6 +13,8 @@ export const Content = styled.div`
     max-width: var(--maxWidth);
     padding: 20px 0;
     margin: 0 auto;
+    text-decoration: none;
+    color: azure;
 `;
 
 export const LogoImg = styled.img`
@@ -28,5 +30,10 @@ export const TMDBLogoImg = styled.img`
     @media screen and (max-width: 500px){
         width: 80px;
     }
+`;
+export const Text = styled.div`
+    text-decoration: none;
+    color: azure;
+    
 `;
 

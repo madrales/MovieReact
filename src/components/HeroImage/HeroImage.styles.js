@@ -30,7 +30,7 @@ export const Content = styled.div`
 
 export const Text = styled.div`
     z-index: 100;
-    max-wdith: 700px;
+    max-width: 700px;
     position: absolute;
     bottom: 40px;
     margin-right: 20px;

@@ -4,16 +4,33 @@ import { Link } from 'react-router-dom';
 import RMDBLogo from '../../images/react-movie-logo.svg';
 import TMDBLogo from '../../images/tmdb_logo.svg';
 
-import { Wrapper, Content, LogoImg, TMDBLogoImg } from './Header.styles';
+import { Wrapper, Content, Text, LogoImg, TMDBLogoImg } from './Header.styles';
 
 
 const Header = () => (
     <Wrapper>
+        {/* <LogoImg src={RMDBLogo} alt='rmdb-logo'/> */}
         <Content>
-            <Link to='/'>
-            <LogoImg src={RMDBLogo} alt='rmdb-logo'/>
+        <Link to='/'>
+                <Text>
+                    HOME
+                </Text>
             </Link>
-            <TMDBLogoImg src={TMDBLogo} alt='tmbd-logo'/>
+            <Link to='movieProject'>
+                <Text>
+                    PROJECTS
+                </Text>
+            </Link>
+            <Link to='resume'>
+                <Text>
+                    RESUME
+                </Text>
+            </Link>
+            <Link to='contact'>
+                <Text>
+                    CONTACT
+                </Text>
+            </Link>
         </Content>
     </Wrapper>
 );
