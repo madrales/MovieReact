@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import RMDBLogo from '../../images/react-movie-logo.svg';
-import TMDBLogo from '../../images/tmdb_logo.svg';
 
-import { Wrapper, Content, Text, LogoImg, TMDBLogoImg } from './Header.styles';
+import { Wrapper, Content, Text } from './Header.styles';
 
 
 const Header = () => (
@@ -16,7 +14,7 @@ const Header = () => (
                     HOME
                 </Text>
             </Link>
-            <Link to='movieProject'>
+            <Link to='projects'>
                 <Text>
                     PROJECTS
                 </Text>

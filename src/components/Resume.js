@@ -1,8 +1,5 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import Grid from './Grid';
+import React from 'react';
 import HeroImage from './HeroImage';
-import mason from '../images/mason.jpg';
 import resume from '../images/resume.jpg';
 
 
