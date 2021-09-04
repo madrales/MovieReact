@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
-    // backgroundColor: "#1c1c1c",
     padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
@@ -39,12 +38,9 @@ const useStyles = makeStyles((theme) => ({
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
-    // backgroundColor: "#1c1c1c",
-    width: '100%',
   },
   card: {
     height: '100%',
-    // width: '50%',
     display: 'flex',
     flexDirection: 'column',
   },
@@ -55,48 +51,20 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   footer: {
-    backgroundColor: "#353535",
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
 }));
 
-const cards = [1, 2, 3];
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-export default function Album() {
+export default function ProjectAlbum() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
       <CssBaseline />
       <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Highlights
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Take a look at some of the features of my website. From projects, coursework, and experience, I hope to accurately display what I can bring to the table.
-            </Typography>
-            {/* <div className={classes.heroButtons}>
-              <Grid container spacing={2} justifyContent="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    <Link to="resume">
-                        VIEW RESUME
-                    </Link>
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Contact Information
-                  </Button>
-                </Grid>
-              </Grid>
-            </div> */}
-          </Container>
-        </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -109,15 +77,15 @@ export default function Album() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Capstone Project
+                      Project Name:
                     </Typography>
                     <Typography>
-                      Mizzou CoE Calculators Project
+                      Project Description
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View Project
+                      View
                     </Button>
                   </CardActions>
                 </Card>

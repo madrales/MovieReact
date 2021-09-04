@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from './Grid';
-import Album from './Album';
+import ProjectAlbum from './ProjectAlbum';
 import HeroImage from './HeroImage';
 import mason from '../images/mason.jpg';
 
@@ -8,13 +8,11 @@ const Projects = () => {
     return (
         <>
             <HeroImage
-                image={mason}
-                title="Mason Adrales Portfolio Website"
-                text="Throughout my time at the University of Missouri, I was fortunate to take multiple web development courses. These classes helped to lead me towards the industry that I wish to pursue post-graduation: web development. With experience in HTML, CSS, Javascript, React.js, Angular, and other technologies, I hope to find the position that is right for me."
+                image="https://source.unsplash.com/random"
+                title="Projects"
+                text="This page shows a collection of the projects that I have completed in either the classroom or in my personal time"
             />
-            <Grid>
-            </Grid>
-            <Album/>
+            <ProjectAlbum/>
         </>
     );
 };
